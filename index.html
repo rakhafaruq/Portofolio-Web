@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portofolio - Rakha</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="bg-gray-100 text-gray-800 font-sans">
+        <!-- navbar -->
+        <nav class="bg-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-gray-800">RakhaFaruq</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">Tentang Saya</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-500 transition duration-300">Proyek</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-500 transition duration-300">Kontak</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                    <i class="fas fa-bars fa-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-500">Tentang Saya</a>
+                <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-500">Proyek</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-500">Kontak</a>
+            </div>
+        </nav>
+        <!-- navbar -->
+
+        <header class="bg-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <div class="flex justify-center mb-8">
+                    <img src="/assets/profil.jpeg" alt="Foto Profil" class="w-40 h-40 rounded-full object-cover shadow-lg" />
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800">Muhammad Rakha Alfaruq</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Mahasiswa Sistem Informasi dengan minat mendalam pada <span class="font-semibold text-blue-600">Enterprise System</span> dan <span class="font-semibold text-blue-600">Decision Support System</span>.
+                </p>
+                <a href="#projects" class="mt-8 inline-block bg-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300">Lihat Proyek Saya</a>
+            </div>
+        </header>
+
+        <!-- about -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">Tentang Saya</h2>
+                <div class="max-w-3xl mx-auto text-center text-gray-600 leading-relaxed">
+                    <p>
+                        Selamat datang di portofolio saya! Saya adalah seorang mahasiswa yang bersemangat dalam mempelajari teknologi yang inovatif dan fungsional. Dengan pengalaman di bidang pengembangan web dan pengolahan data,
+                        saya suka mengubah ide-ide kompleks menjadi aplikasi yang sederhana dan menarik bagi pengguna.
+                    </p>
+                    <p class="mt-4">Keahlian utama saya meliputi HTML, CSS, JavaScript, dan berbagai kerangka kerja modern seperti React. Saya selalu antusias untuk belajar teknologi baru dan menerapkannya dalam proyek-proyek saya.</p>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+
+        <!-- project -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Proyek Pilihan Saya</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 flex flex-col">
+                        <img src="/assets/wad.png" alt="Gambar Proyek Aplikasi Database" class="w-full h-56 object-cover" />
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold mb-2">Aplikasi Database Berbasis Website</h3>
+                            <p class="text-gray-600 mb-4">
+                                Membangun sebuah aplikasi web fungsional yang terintegrasi dengan database MySQL. Aplikasi ini dirancang untuk memudahkan pengelolaan dan monitoring data melalui fitur CRUD (Create, Read, Update, Delete) yang
+                                dikembangkan menggunakan Python.
+                            </p>
+                            <p class="text-sm text-gray-500 font-semibold mb-4">Teknologi: Python, MySQL, HTML</p>
+                            <a href="https://github.com/rakhafaruq/tugasBesar_WAD" class="text-blue-500 font-bold hover:underline mt-auto">Lihat di GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 flex flex-col">
+                        <img src="/assets/datmin.png" alt="Gambar Proyek Machine Learning" class="w-full h-56 object-cover" />
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold mb-2">Aplikasi Prediksi Penyakit Jantung</h3>
+                            <p class="text-gray-600 mb-4">
+                                Sebagai Ketua Kelompok, saya memimpin pengembangan sistem untuk memprediksi penyakit jantung menggunakan Machine Learning. Proyek ini menerapkan algoritma K-Means Clustering untuk segmentasi pasien dan
+                                Regresi Logistik untuk prediksi, dengan hasil yang disajikan melalui dashboard interaktif menggunakan Streamlit.
+                            </p>
+                            <p class="text-sm text-gray-500 font-semibold mb-4">Teknologi: Python, Machine Learning, Streamlit</p>
+                            <a href="https://friendly-parakeet-4jwvr7xppw55fw5x-8501.app.github.dev/" class="text-blue-500 font-bold hover:underline mt-auto">Lihat Dashboard <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project -->
+
+        <!-- contact -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Hubungi Saya</h2>
+                <p class="text-gray-600 mb-8 max-w-xl mx-auto">Saya terbuka untuk peluang kolaborasi atau proyek baru. Jangan ragu untuk menghubungi saya melalui email atau media sosial.</p>
+                <div class="mt-10 flex justify-center space-x-6">
+                    <a href="https://github.com/rakhafaruq/" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-rakha-alfaruq-9518b6337" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/didyurak/" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+
+        <!-- footer -->
+        <footer class="bg-gray-800 text-white py-6">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; 2025 rakhafaruq. Dibuat dengan <i class="fas fa-heart text-red-500"></i> menggunakan HTML & Tailwind CSS.</p>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <script>
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            mobileMenuButton.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+        </script>
+    </body>
+</html>
